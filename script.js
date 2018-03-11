@@ -1,6 +1,8 @@
 const cards = document.querySelectorAll('.website_card');
 const game = document.querySelector('.website_game');
 
+//function to create double card images
+
 function createCardImages() {
   let images = ['img/delicate.jpg', 'img/metro.jpg', 'img/yellow.jpg'];
   return [...images, ...images];
@@ -8,12 +10,19 @@ function createCardImages() {
 
 let cardCovers = createCardImages();
 
-cards.forEach((card) => {
-  card.addEventListener("click", function() {
-    cardClick(card);
-  })
-});
+//function to create click listener for each card
 
+function clickCard() {
+  cards.forEach((card) => {
+    card.addEventListener("click", function() {
+      cardClick(card);
+    })
+  });
+}
+
+clickCard();
+
+//function to randomly pick card cover
 
 function cardClick(cardN) {
   let rand = cardCovers[Math.floor(Math.random() * cardCovers.length)];
@@ -22,7 +31,6 @@ function cardClick(cardN) {
   let newCovers = cardCovers.splice(removed, 1);
   console.log(newCovers, cardCovers)
 }
+/* TO DO:
 
-
-  //card[0].classList.remove("website_card");
-  //card[0].classList.add("mystyle");
+function to count each click if clicks > 2 change all the covers back to no image
