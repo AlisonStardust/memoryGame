@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.website_game {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+
+.website_card {
+  margin: 10px;
+  border: solid 1px #8A89C0;
+  height: 150px;
+  width: 150px;
+  background-color: #8A89C0;
+}
+
+.mystyle {
+  background-image: url(img/metro.jpg);
+}
