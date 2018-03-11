@@ -31,6 +31,7 @@ function cardClick(cardN) {
   let newCovers = cardCovers.splice(removed, 1);
   console.log(newCovers, cardCovers)
 }
+
 /* TO DO:
 
-function to count each click if clicks > 2 change all the covers back to no image
+function to count each click if clicks > 2 change all the covers back to no image */
