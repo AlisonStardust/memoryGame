@@ -11,6 +11,18 @@
   justify-content: space-around;
 }
 
+.website_cardleaf {
+  background-image: url(img/leaf.jpg);
+}
+
+.website_cardmetro {
+  background-image: url(img/metro.jpg);
+}
+
+.website_cardcat {
+  background-image: url(img/cat.jpg);
+}
+
 .website_card {
   margin: 10px;
   border: solid 1px #8A89C0;
@@ -19,6 +31,8 @@
   background-color: #8A89C0;
 }
 
-.mystyle {
-  background-image: url(img/metro.jpg);
+.website_youWon {
+  display: none;
+  height: 100%;
+  width: 100%;
 }
