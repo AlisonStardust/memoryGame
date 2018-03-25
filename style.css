@@ -11,19 +11,21 @@
   justify-content: space-around;
 }
 
-.website_cardleaf {
-  background-image: url(img/leaf.jpg);
+.card> .back {
+  background-image: url("img/back.jpg");
+  width: 100%;
+  height: 100%;
 }
 
-.website_cardmetro {
-  background-image: url(img/metro.jpg);
+.card > .back {
+  display: block;
 }
 
-.website_cardcat {
-  background-image: url(img/cat.jpg);
+.card > .front {
+  display: none;
 }
 
-.website_card {
+.card {
   margin: 10px;
   border: solid 1px #8A89C0;
   height: 150px;
